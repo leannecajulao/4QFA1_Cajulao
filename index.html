@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="signupForm">
+        <fieldset>
+            <legend>✨HEY GURL! SIGN-IN BELOW✨</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" onblur="checkInput(this)" onfocus="clearBorder(this)">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" onblur="checkInput(this)" onfocus="clearBorder(this)">
+            <br>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" onblur="checkInput(this)" onfocus="clearBorder(this)">
+                <option value="">Select...</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="prefer">Prefer not to mention</option>
+            </select>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" onblur="checkInput(this)" onfocus="clearBorder(this)">
+            <br>
+            <label for="occupation">Occupation:</label>
+            <select id="occupation" name="occupation" onblur="checkInput(this)" onfocus="clearBorder(this)">
+                <option value="">Select...</option>
+                <option value="student">Student</option>
+                <option value="employed">Employed</option>
+                <option value="selfEmployed">Self-Employed</option>
+                <option value="unemployed">Unemployed</option>
+            </select>
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+    <div id="output"></div>
+    <script src="script.js"></script>
+</body>
+</html>
